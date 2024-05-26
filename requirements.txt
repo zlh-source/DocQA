@@ -1,0 +1,7 @@
+FlagEmbedding==1.2.9
+gradio==4.29.0
+langchain_community==0.0.38
+PyMuPDF==1.16.14
+# torch==2.2.1+cu118
+tqdm==4.65.0
+transformers==4.40.1
