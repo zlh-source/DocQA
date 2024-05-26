@@ -19,6 +19,7 @@ rerank_path = args.rerank_path
 if gr.NO_RELOAD:
     qa_pipeline = get_pipeline(model_path)
     reranker = FlagReranker(rerank_path, use_fp16=True)
+    
 embed_bsz=16
 topk=50
 llmer = QAer(qa_pipeline, reranker, embed_bsz, topk)

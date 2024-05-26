@@ -145,7 +145,7 @@ class QAer:
 
         if self.have_selected_knowledge(selected_knowledge):
             selected_knowledge = selected_knowledge[:topk_gr]
-
+        
         bot_message = self.predict(message, chat_history, selected_knowledge)
         
         chat_history.append((message,None))
